@@ -34,6 +34,7 @@ const Wrapper = styled.div`
     height: 100vh;
     justify-content: center;
     align-items: center;
+    background-color: ${(props) => props.theme.backgroundColor};
 `;
 
 const rotationAnimation = keyframes`
@@ -73,6 +74,10 @@ const Box = styled.div`
     };
 `;
 
+const Title = styled.h1`
+    color: ${(props) => props.theme.textColor};
+`;
+
 function App() {
   return (
     // <Father as="header">
@@ -85,11 +90,14 @@ function App() {
     //     <Input />
     //     <Input />
     // </Father>
+    // <Wrapper>
+    //     <Box>
+    //         <Emoji>😊</Emoji>
+    //     </Box>
+    //     <Emoji>❤️</Emoji>
+    // </Wrapper>
     <Wrapper>
-        <Box>
-            <Emoji>😊</Emoji>
-        </Box>
-        <Emoji>❤️</Emoji>
+        <Title>Hello</Title>
     </Wrapper>
   );
 }
