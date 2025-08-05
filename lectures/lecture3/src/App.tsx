@@ -1,6 +1,5 @@
 import { useState } from "react";
 import styled from "styled-components";
-// import Circle from "./Circle";
 
 const Container = styled.div`
     background-color: ${(props) => props.theme.bgColor};
@@ -21,10 +20,6 @@ function App() {
         console.log("hello", value);
     }
     return (
-        // <div>
-        //     <Circle bgColor="teal" borderColor="yellow"/>
-        //     <Circle bgColor="tomato" text="im here"/>
-        // </div>
 
         <Container>
             <H1>Protected</H1>
