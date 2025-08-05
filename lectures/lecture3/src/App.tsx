@@ -1,5 +1,14 @@
 import { useState } from "react";
+import styled from "styled-components";
 // import Circle from "./Circle";
+
+const Container = styled.div`
+    background-color: ${(props) => props.theme.bgColor};
+`;
+
+const H1 = styled.h1`
+    color: ${(props) => props.theme.textColor};
+`;
 
 function App() {
     const [value, setValue] = useState("");
@@ -17,12 +26,13 @@ function App() {
         //     <Circle bgColor="tomato" text="im here"/>
         // </div>
 
-        <div>
+        <Container>
+            <H1>Protected</H1>
             <form onSubmit={onSubmit}>
                 <input value={value} onChange={onChange} type="text" placeholder="username" />
                 <button>Log in</button>
             </form>
-        </div>
+        </Container>
     );
 }
 
