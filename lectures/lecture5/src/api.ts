@@ -10,7 +10,7 @@ export function fetchCoinInfo(coinId:string) {
 }
 
 export function fetchCoinTickers(coinId:string) {
-    return fetch(`${COIN_PAPRIKA_URL}/tickers/${coinId}`).then((response)=> response.json());
+    return fetch(`${NOMAD_URL}/tickers/${coinId}`).then((response)=> response.json());
 }
 
 export function fetchCoinHistory(coinId:string) {

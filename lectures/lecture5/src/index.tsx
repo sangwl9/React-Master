@@ -7,6 +7,8 @@
  * npm i @tanstack/react-query
  * npm i -D @tanstack/react-query-devtools
  * npm i --save react-apexcharts apexcharts
+ * npm i react-helmet
+ * npm i --save-dev @types/react-helmet
  */
 
 import ReactDOM from 'react-dom/client';
