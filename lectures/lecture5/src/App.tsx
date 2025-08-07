@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import Router from "./Router";
+import {ReactQueryDevtools} from "@tanstack/react-query-devtools";
 
 const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,6 +67,7 @@ function App() {
     return <>
         <GlobalStyle />
         <Router />
+        <ReactQueryDevtools initialIsOpen={true} />
     </>
 }
 

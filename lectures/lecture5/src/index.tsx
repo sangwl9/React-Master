@@ -5,6 +5,7 @@
  * npm i react-router-dom@5.3.4
  * npm i --save-dev @types/react-router-dom
  * npm i @tanstack/react-query
+ * npm i -D @tanstack/react-query-devtools
  */
 
 import ReactDOM from 'react-dom/client';
