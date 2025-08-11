@@ -5,6 +5,7 @@
  * npm i --save-dev @types/styled-components @types/react-router-dom @tanstack/react-query-devtools @types/react-helmet
  * npm i --save react-apexcharts apexcharts
  * npm i recoil
+ * npm i react-hook-form
  */
 
 import ReactDOM from 'react-dom/client';
