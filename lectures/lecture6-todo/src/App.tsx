@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import ToDoList from "./ToDoList";
+import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -63,10 +63,12 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
-    return <>
-        <GlobalStyle />
-        <ToDoList />
-    </>
+    return (
+        <>
+            <GlobalStyle />
+            <ToDoList />
+        </>
+    );
 }
 
 export default App;
