@@ -1,5 +1,8 @@
 import { createGlobalStyle } from "styled-components";
+import { RecoilEnv } from "recoil";
 import ToDoList from "./components/ToDoList";
+
+RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
 
 const GlobalStyle = createGlobalStyle`
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
