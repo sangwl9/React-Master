@@ -6,8 +6,6 @@ export enum Categories {
     "DONE" = "DONE",
 }
 
-type categories = "TO_DO" | "DOING" | "DONE";
-
 export interface IToDo {
     text: string;
     id: number;
