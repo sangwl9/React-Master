@@ -77,6 +77,7 @@ const GlobalStyle = createGlobalStyle`
         line-height: 1.2;
         margin: 0;
         background-color: black;
+        overflow-x:hidden
     }
     a {
         text-decoration: none;
