@@ -16,6 +16,7 @@ import { ThemeProvider } from "styled-components";
 import { theme } from "./theme";
 import { createGlobalStyle } from "styled-components";
 import { RecoilEnv } from "recoil";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 RecoilEnv.RECOIL_DUPLICATE_ATOM_KEY_CHECKING_ENABLED = false;
 
@@ -82,14 +83,18 @@ const GlobalStyle = createGlobalStyle`
     }
 `;
 
+const client = new QueryClient();
+
 const root = ReactDOM.createRoot(
     document.getElementById("root") as HTMLElement,
 );
 root.render(
     <RecoilRoot>
-        <ThemeProvider theme={theme}>
-            <GlobalStyle />
-            <App />
-        </ThemeProvider>
+        <QueryClientProvider client={client}>
+            <ThemeProvider theme={theme}>
+                <GlobalStyle />
+                <App />
+            </ThemeProvider>
+        </QueryClientProvider>
     </RecoilRoot>,
 );
